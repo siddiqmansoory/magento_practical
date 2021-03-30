@@ -1,0 +1,22 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_items">
+            <arguments>
+                <argument name="columns" xsi:type="array">
+                    <item name="next_order_date" xsi:type="string" translate="true">Next Order Date</item>
+                </argument>
+            </arguments>
+            <referenceBlock name="default_order_items_renderer">
+                <arguments>
+                    <argument name="columns" xsi:type="array">
+                        <item name="next_order_date" xsi:type="string" translate="true">col-next_order_date</item>
+                    </argument>
+                </arguments>
+            </referenceBlock>
+
+            <block class="Magento\Sales\Block\Adminhtml\Items\Column\DefaultColumn"
+                   name="column_next_order_date"
+                   template="Deval_Recurring::next_order_date.phtml" group="column" />
+        </referenceBlock>
+    </body>
+</page>

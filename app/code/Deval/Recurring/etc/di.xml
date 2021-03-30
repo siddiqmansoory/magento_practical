@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Quote\Model\Quote\Item\ToOrderItem">
+        <plugin name="next_order_date_quote_to_order_item" type="Deval\Recurring\Plugin\NextOrderDateQuoteToOrderItem"/>
+        <plugin name="order_frequency_quote_to_order_item" type="Deval\Recurring\Plugin\OrderFrequencyQuoteToOrderItem"/>
+    </type>
+</config>

@@ -1,0 +1,1 @@
+"Fatal Error: 'Allowed memory size of 134217728 bytes exhausted (tried to allocate 1052672 bytes)' in 'D:\\xampp_7_3_23\\htdocs\\practicals\\deval_practical\\vendor\\magento\\zendframework1\\library\\Zend\\Db\\Statement.php' on line 163"
